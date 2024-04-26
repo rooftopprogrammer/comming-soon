@@ -1,0 +1,55 @@
+.coming-soon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.title {
+  font-size: 48px;
+  animation: fadeInDown 2s;
+}
+
+.countdown {
+  font-size: 32px;
+  margin: 20px 0;
+  animation: fadeInUp 2s;
+}
+
+.info {
+  font-size: 24px;
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
